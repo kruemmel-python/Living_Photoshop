@@ -4,7 +4,7 @@ Living_Photoshop fusioniert HALO (SIMD-Filter) mit MicroDB (Swarm/Mycel) zu eine
 biologischen Bildgenerator. Jedes Pixel wird Teil eines agentenbasierten Systems:
 Gradienten erzeugen Gefahr-Pheromone, Ressourcen steuern Erholung/Glattziehen,
 und Mycel-Strukturen schärfen oder texturieren das Bild.
-
+(Living_Photoshop nutzt https://github.com/kruemmel-python/Micro-Swarm-v2.0.git etwas verändert)
 ## Was es macht
 
 - Liest ein RGB-Bild (PPM/P6, 8-bit)
