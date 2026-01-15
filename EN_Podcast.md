@@ -34,7 +34,7 @@
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Video_Podcast_Analysis.md: Technical Analysis of HELO V1 (Living Photoshop)
+# Technical Analysis of HELO V1 (Living Photoshop)
 
 This analysis cross-references the speaker's statements with the actual source code and logs of the `Living_Photoshop` (HELO V1) project to confirm technical accuracy and answer the underlying questions.
 
