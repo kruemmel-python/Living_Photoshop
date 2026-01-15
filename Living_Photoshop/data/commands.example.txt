@@ -1,0 +1,9 @@
+# Fokus auf ein Gesicht
+# goto x y radius
+goto 320 240 120
+
+# Entferne flache Bereiche
+sql DELETE FROM Pixels WHERE energy < 0.15
+
+# Debug: Zaehle starke Mycel-Knoten
+sql SELECT COUNT FROM Pixels WHERE mycel > 0.7

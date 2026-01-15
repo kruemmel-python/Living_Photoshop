@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.20)
+project(HELO_V1 LANGUAGES CXX)
+
+# Force all runtime outputs into the root build folder (e.g. Living_Photoshop_build/Release)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
+foreach(cfg Debug Release RelWithDebInfo MinSizeRel)
+    string(TOUPPER "${cfg}" cfg_upper)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_${cfg_upper} "${CMAKE_BINARY_DIR}/${cfg}")
+    set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_${cfg_upper} "${CMAKE_BINARY_DIR}/${cfg}")
+    set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_${cfg_upper} "${CMAKE_BINARY_DIR}/${cfg}")
+endforeach()
+
+add_subdirectory(Living_Photoshop)
+set(MICRODB_BUILD_WORKBENCH OFF CACHE BOOL "Build wxWidgets Workbench app" FORCE)
+add_subdirectory(MicroDB)
